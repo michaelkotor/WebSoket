@@ -15,7 +15,7 @@ public class MainController {
 
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
-    public Boolean greeting(HelloMessage message) throws Exception {
+    public Boolean greeting() throws Exception {
         return lampe.OnOrOffLampe();
     }
 
