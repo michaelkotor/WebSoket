@@ -17,4 +17,9 @@ public class Lampe {
     public void setActive(boolean active) {
         isActive = active;
     }
+
+    public boolean OnOrOffLampe() {
+        this.isActive = !this.isActive;
+        return this.isActive;
+    }
 }
